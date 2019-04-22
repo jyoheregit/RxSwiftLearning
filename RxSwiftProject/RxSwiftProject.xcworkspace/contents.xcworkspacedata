@@ -5,6 +5,15 @@
       location = "group:RxSwiftProject/FirstPlayground.playground">
    </FileRef>
    <FileRef
+      location = "group:RxSwiftProject/SecondPlayground.playground">
+   </FileRef>
+   <FileRef
+      location = "group:RxSwiftProject/ThirdPlayground.playground">
+   </FileRef>
+   <FileRef
+      location = "group:RxSwiftProject/FourthPlayground.playground">
+   </FileRef>
+   <FileRef
       location = "group:RxSwiftProject.xcodeproj">
    </FileRef>
    <FileRef

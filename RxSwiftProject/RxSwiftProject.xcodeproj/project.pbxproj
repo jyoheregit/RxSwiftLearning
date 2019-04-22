@@ -15,6 +15,8 @@
 		B14588F3226ABA34007A8B91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14588F2226ABA34007A8B91 /* Assets.xcassets */; };
 		B14588F6226ABA34007A8B91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14588F4226ABA34007A8B91 /* LaunchScreen.storyboard */; };
 		B1458901226ABA34007A8B91 /* RxSwiftProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1458900226ABA34007A8B91 /* RxSwiftProjectTests.swift */; };
+		B145890D226B19BE007A8B91 /* Note1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B145890C226B19BE007A8B91 /* Note1.txt */; };
+		B145890F226B1DE9007A8B91 /* Note2.txt in Resources */ = {isa = PBXBuildFile; fileRef = B145890E226B1DE9007A8B91 /* Note2.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		B14588FC226ABA34007A8B91 /* RxSwiftProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1458900226ABA34007A8B91 /* RxSwiftProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftProjectTests.swift; sourceTree = "<group>"; };
 		B1458902226ABA34007A8B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B145890C226B19BE007A8B91 /* Note1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Note1.txt; sourceTree = "<group>"; };
+		B145890E226B1DE9007A8B91 /* Note2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Note2.txt; sourceTree = "<group>"; };
 		BE1F2D2C95E530D79D819270 /* Pods_RxSwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,6 +96,7 @@
 				B14588EA226ABA33007A8B91 /* RxSwiftProject */,
 				B14588FF226ABA34007A8B91 /* RxSwiftProjectTests */,
 				B14588E9226ABA33007A8B91 /* Products */,
+				B145890B226B197E007A8B91 /* Notes */,
 				4145F5BE48DA050B8429BC70 /* Pods */,
 				9223D90D525DE07CE96C0221 /* Frameworks */,
 			);
@@ -126,6 +131,15 @@
 				B1458902226ABA34007A8B91 /* Info.plist */,
 			);
 			path = RxSwiftProjectTests;
+			sourceTree = "<group>";
+		};
+		B145890B226B197E007A8B91 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				B145890C226B19BE007A8B91 /* Note1.txt */,
+				B145890E226B1DE9007A8B91 /* Note2.txt */,
+			);
+			path = Notes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,7 +228,9 @@
 			files = (
 				B14588F6226ABA34007A8B91 /* LaunchScreen.storyboard in Resources */,
 				B14588F3226ABA34007A8B91 /* Assets.xcassets in Resources */,
+				B145890D226B19BE007A8B91 /* Note1.txt in Resources */,
 				B14588F1226ABA33007A8B91 /* Main.storyboard in Resources */,
+				B145890F226B1DE9007A8B91 /* Note2.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

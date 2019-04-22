@@ -1,0 +1,26 @@
+Observables
+    They are cold: Code gets executed at list they have single observer.
+    Creates copy of data: Observable creates copy of data for each observer.
+    Uni-directional: Observer can not assign value to observable(origin/master).
+
+PublishSubject
+    They are hot: code get executed and value get broadcasted even if there is no observer.
+    Shares data: Same data get shared between all observers.
+    bi-directional: Observer can assign value to observable(origin/master).
+    If are using using subject then you miss all the values that are brodcasted before creation of observer.
+
+BehaviorSubject
+    They are hot: code get executed and value get broadcasted even if there is no observer.
+    Shares data: Same data get shared between all observers.
+    bi-directional: Observer can assign value to observable(origin/master). plus
+    Replay the message stream: No matter when you subscribe the replay subject you will get the latest value.
+    You should set initial value: You can initialize the observable with default value.
+
+ReplaySubject
+    They are hot: code get executed and value get broadcasted even if there is no observer.
+    Shares data: Same data get shared between all observers.
+    bi-directional: Observer can assign value to observable(origin/master). plus
+    Replay the message stream: No matter when you subscribe the replay subject you will receive the brodcasted messages according
+    to the buffer size.
+    In publish subject and replay subject you cannot set the initial value to observable. 
+

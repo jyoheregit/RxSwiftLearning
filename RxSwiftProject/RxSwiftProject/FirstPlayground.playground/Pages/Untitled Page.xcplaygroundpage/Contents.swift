@@ -1,14 +1,20 @@
 import Foundation
 import RxSwift
 
+// Observable - of
+// Observable - just
+// Observable - from
+
 print("------- First Observable --------")
+
+let disposeBag = DisposeBag()
 
 var firstObservable = Observable.of(1, 2) // of - many values
 
 print("------ First Subscriber ---------")
 firstObservable.subscribe { event in
     print(event)
-}
+}.disposed(by: disposeBag)
 
 print("------- Second Subscriber --------")
 firstObservable.subscribe { event in
@@ -20,12 +26,12 @@ firstObservable.subscribe { event in
     case .completed:
         print(event)
     }
-}
+}.disposed(by: disposeBag)
 
 print("------- Third Subscriber --------")
 firstObservable.subscribe ( onNext: {
     print($0)
-})
+}).disposed(by: disposeBag)
 
 print("------- Second Observable --------")
 
@@ -49,6 +55,7 @@ secondObservable.subscribe(onNext: { (value) in
 
 //All parameters are optional in the above method as a default value is assigned
 let subscription = secondObservable.subscribe()
+subscription.dispose()
 
 print("-------Long subscribe method with trailing closure -------")
 
@@ -71,4 +78,5 @@ let thirdObservable = Observable.from([1, 2, 3, 4]) // from - array values
 thirdObservable.subscribe { (event) in
     print(event)
 }
+
 
