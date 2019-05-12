@@ -7,7 +7,6 @@ import RxCocoa
 // FlatMap
 // FlatMapLatest
 
-
 // Map
 
 let disposeBag = DisposeBag()
